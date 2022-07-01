@@ -1,24 +1,19 @@
-include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * main - Entry block
- * Description: lowercase without q and e
- * Return: 0
- */
+* main - Entry point
+* Return: Always 0 (Success/correct)
+*/
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		if (c != 'q' && c != 'e')
-		{
-			putchar(c);
-		}
-		c++;
-	}
-
-	putchar('\n');
-	return (0);
-
+        char alphabet;
+        for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+        {
+        if (alphabet == 'q')
+        continue;
+        else if (alphabet == 'e')
+        continue;
+        putchar(alphabet);
+        }
+        putchar('\n');
+        return (0);
 }
