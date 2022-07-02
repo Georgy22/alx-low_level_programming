@@ -1,26 +1,20 @@
-include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * main - entry block
- * Description: alphabets in lower and upper
- * Return: 0
- */
+* main - Entry point
+* Return: Always 0 (Sucess/correct)
+*/
 int main(void)
 {
-	char c = 'a';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
-	putchar('\n');
-	return (0);
+char lower_case;
+char upper_case;
+for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+{
+putchar(lower_case);
+}
+for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+{
+putchar(upper_case);
+}
+putchar ('\n');
+return (0);
 }

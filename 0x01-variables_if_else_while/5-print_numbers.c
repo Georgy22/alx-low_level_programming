@@ -1,21 +1,15 @@
-include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
- * main - Entry block
- * Description: print single digit numbers
- * Return: 0
- */
+* main - Entry point
+* Return: Always 0 (success/correct)
+*/
 int main(void)
 {
-	char c = '0';
-
-	while (c <= '9')
-	{
-		putchar(c);
-		c++;
-	}
-
-	putchar('\n');
-	return (0);
+        int i;
+        for (i = 0 ; i < 10; i++)
+        {
+        printf("%i", i);
+        }
+        printf("\n");
+        return (0);
 }
