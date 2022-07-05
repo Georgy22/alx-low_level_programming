@@ -1,21 +1,23 @@
 #include <stdio.h>
+#include<stdlib.h>
 /**
-* main - Entry point
-* Return: Always 0 (Success/correct)
-*/
+ * main - block to be executed
+ * Description: print all single digits
+ * Return: 0 Success
+ */
 int main(void)
 {
-        int number;
-        for (number = 48; number <= 57; number++)
-        {
-        putchar(number);
-        if (number == 57)
-        {
-        break;
-        }
-        putchar(',');
-        putchar (' ');
-        }
-        putchar('\n');
-        return (0);
+int c = 0;
+while (c < 10)
+{
+	putchar(48 + c);
+	if (c != 9)
+	{
+		putchar(',');
+		putchar(' ');
+	}
+	c++;
+}
+putchar('\n');
+return (0);
 }

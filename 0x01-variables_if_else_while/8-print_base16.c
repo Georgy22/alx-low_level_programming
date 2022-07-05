@@ -1,20 +1,21 @@
-
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - entry point
- *
- * Return: Always 0 (success/correct)
+ * main - main block to be executed
+ * Description: printing base 10 digits
+ * Return: 0 Success
  */
 int main(void)
 {
-        char base_16;
-        for (base_16 = 48; base_16 <= 57; base_16++)
-        {putchar(base_16);
-        }
-        for (base_16 = 97 ; base_16 <= 102; base_16++)
-        {
-        putchar(base_16);
-        }
-        putchar ('\n');
-        return (0);
+char ch;
+for (ch = '0'; ch <= '9'; ch++)
+{
+	putchar(ch);
+}
+for (ch = 'a'; ch <= 'f'; ch++)
+{
+	putchar(ch);
+}
+putchar('\n');
+return (0);
 }
