@@ -1,19 +1,25 @@
 #include "main.h"
+
 /**
- * print_alphabet_x10 - function to print abc 10 times
+ * print_alphabet_x10 - entry point
  *
- * Return: 0
+ * Description: Prints the alphabet with _putchar ten times
+ *
+ * Return: void
  */
+
+
 void print_alphabet_x10(void)
 {
-	char c, i;
-:wq
-	for (i = 0; i <= 9; i++)
+	char c;
+	int i;
+
+	for (i = 0; i < 10; i++)
 	{
 		for (c = 'a'; c <= 'z'; c++)
 		{
 			_putchar(c);
 		}
-		_putchar('\n');:
+		_putchar('\n');
 	}
 }
